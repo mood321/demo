@@ -1,0 +1,21 @@
+let req=http.request({
+	'hostname':'fulinono.com',
+	'path':'/'
+	
+},res=>{
+	//console.log(res);
+	var arr=[];
+	var str='';
+	res.on('data',buffer=>{
+		arr.push(buffer);
+		str=str+buffer;
+	});
+	res.on('end',()=>{
+		//console.log(arr);
+		//console.log(str);
+		fs.writeFile('fulinono.html',arr,'utf8',()=>{
+			console.log('成功');
+		});
+	});
+});
+req.end();

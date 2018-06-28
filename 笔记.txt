@@ -1,0 +1,26 @@
+var http=require('http');
+
+
+const fs=require('fs');
+
+createServer() 新建服务器
+Buffer.concat(arr) 转字节流
+http.createServer((request,response)=>{
+	response.write("demo");
+	response.end();
+}).listen(9000);//
+
+console.log(http);
+
+request  访问服务器
+
+console.log(res.statusCode,res.headers);
+
+
+var html=gbk.toString('utf-8',data);
+
+arr.push(buffer);
+
+虚拟dom
+
+segment 中文分词模块
