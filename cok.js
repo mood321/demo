@@ -1,7 +1,7 @@
 const superagent=require('superagent');
 
 exports.getCookie=function(success){
-	//1
+	//3
     superagent.post('http://fulinono.com/wp-login.php')
         .type('form')
         .send({
